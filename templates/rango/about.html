@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>About</title>
+    </head>
+
+    <body>
+        <h1>About</h1>
+        <div>
+            This page contains a static and media file <br />
+            <strong>{{ boldmessage }}</strong><br />
+        </div>
+        <div>
+            <a href="/rango/">Index</a><br />
+            <img src="{% static "images/beans.jpg" %}" alt="About us" />
+            <img src="{{ MEDIA_URL }}cat.jpg" /> 
+        </div>
+    </body>
+
+</html>
