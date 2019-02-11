@@ -1,7 +1,35 @@
 <!DOCTYPE html>
 
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+<div>
+
+    <h1>About Page</h1>
+    <div>
+        This tutorial bas been made by Oliver Reiff-Musgrove
+    </div>
+    <div>
+        <img src="{% static "images/beans.jpg" %}" alt="Picture of Beans" />
+        <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of Cat"/> 
+    </div>
+
+</div>
+
+{% endblock %}
+</html>
+
+
+
+
+
+<!-- Pre Chapter 8.3
+{% load staticfiles %}
 <html>
     <head>
         <title>About</title>
@@ -21,3 +49,4 @@
     </body>
 
 </html>
+-->
